@@ -1,0 +1,64 @@
+#signUp-Heading {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    background: linear-gradient(110deg, rgb(111, 255, 111), yellow);
+    border-radius: 10px;
+}
+
+body {
+    background-image: radial-gradient(#212121 10%, transparent 10%),
+      radial-gradient(#fafafa 10%, transparent 10%);
+  background-color: royalblue;
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+    /* background-color: green; */
+    margin: 6% 27%;
+    font-size: large;
+}
+
+form {
+    background-color: ghostwhite;
+    padding: 1% 4% 4% 4%;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form::-ms-fill {
+    font-size: xx-large;
+}
+
+fieldset {
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    padding: 8px;
+    margin: 6px;
+    width: 94%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(15deg, purple, orange);
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(200deg, purple, orange);
+}
