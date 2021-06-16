@@ -7,7 +7,7 @@
     border-radius: 10px;
 }
 h1{
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 p{
   margin-right: .5rem;
@@ -34,9 +34,6 @@ form::-ms-fill {
     font-size: xx-large;
 }
 
-fieldset {
-    border-radius: 4px;
-}
 
 input[type="text"],
 input[type="date"],
@@ -67,7 +64,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: linear-gradient(200deg, purple, orange);
 }
-#female{
-  padding-left: 1rem;
-}
-input p
