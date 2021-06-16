@@ -2,39 +2,266 @@
     box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: salmon;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
-button {
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.8rem;
+    background-color: red;
+}
+.stop {
+    position: fixed;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+#sec-1 {
+    height: 24rem;
+    background-color:silver;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+    /* background:
+    linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+    linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+    linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+    linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+    linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+    linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+    background-color: #232927;
+    background-size: 100px 100px; */
+}
+#sec-2 {
+    background:
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background-color: #300;
+    background-size: 100px 100px;
+    /* background-color:#269;
+    background-image: linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px; */
+}
+
+#left-1 {
+    width: 50vw;
+}
+
+#right-1 {
+    width: 50vw;
+}
+
+#logInBg {
+    padding: 0.1rem 1rem;
+    position: relative;
+    left: 13vw;
+    top: 5rem;
+    background-color: rgba(0, 0, 0, 0.221);
+    width: 24vw;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    position: relative;
+    right: 0vw;
+    height: 2rem;
+    width: 10vw;
+    background-color: olive;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background-color: orange;
+}
+
+#home-img {
+    width: inherit;
+    height: inherit;
+}
+
+footer {
+    background-color: seagreen;
+    text-align: center;
+}
+
+.brand-name {
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.nav_btn {
+    position: absolute;
+    right: 1rem;
+    top: 0.2rem;
     background: #d934d3;
     background-image: -webkit-linear-gradient(top, #d934d3, #402bb8);
     background-image: -moz-linear-gradient(top, #d934d3, #402bb8);
-    background-image: -ms-linear-gradient(top, #d934d3, #402bb8);
     background-image: -o-linear-gradient(top, #d934d3, #402bb8);
     background-image: linear-gradient(to bottom, #d934d3, #402bb8);
     -webkit-border-radius: 60;
     -moz-border-radius: 60;
     border-radius: 60px;
-    /* -webkit-box-shadow: 3px 3px 10px #666666;
-    -moz-box-shadow: 3px 3px 10px #666666;
-    box-shadow: 3px 3px 10px #666666; */
     font-family: Georgia;
     color: #ffffff;
-    font-size: 24px;
-    padding: 12px 25px 12px 25px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     text-decoration: none;
+    border: none;
 }
-  
-button:hover {
+.nav_btn:hover {
     background: #fc693c;
     background-image: -webkit-linear-gradient(top, #fc693c, #edf500);
     background-image: -moz-linear-gradient(top, #fc693c, #edf500);
-    background-image: -ms-linear-gradient(top, #fc693c, #edf500);
     background-image: -o-linear-gradient(top, #fc693c, #edf500);
-    background-image: linear-gradient(to bottom, #fc693c, #edf500);
+    background-image: linear-gradient(top bottom, #fc693c, #edf500);
     text-decoration: none;
+  }
+
+
+
+  
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+#mySidenav a:hover {
+    left: 0;
+}
+#about {
+    top: 20vh;
+    background-color: #04AA6D;
+}
+#blog {
+    top: 30vh;
+    background-color: #2196F3;
+}
+#projects {
+    top: 40vh;
+    background-color: #f44336;
+}
+#contact {
+    top: 50vh;
+    background-color: #555
+}
+
+
+
+  /*  */
+  /* for flip */
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    justify-self: center;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
   }

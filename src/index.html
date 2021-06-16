@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,84 @@
     <title>onlineGD - Home</title>
     <link rel="stylesheet" href="../style/main.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <strong><a href="index.html">onlineGD</a></strong>
-            <strong><a href="signUp.html"><button>SIGN UP</button></a></strong>
+            <strong><a href="index.html" class="brand-name">onlineGD</a></strong>
+            <strong><a href="signUp.html"><button class="nav_btn">SIGN UP</button></a></strong>
         </nav>
     </header>
 
-    <footer style="text-align: center;">
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+      </div>
+
+    <section id="sec-1">
+        <div class="box" id="left-1">
+            <div id="logInBg">
+                <form action="" method="get">
+                    <p>Username: <input type="text" name="user" id="user"></p>
+                    <p>Password: <input type="password" name="pass" id="pass"></p>
+                    <p>
+                        <input type="submit" value="Log In">
+                    </p>
+                </form>
+            </div>
+
+        </div>
+        <div class="box" id="right-1">
+            <!-- <img id="home-img" src="../assets/imgs/home.jpg" alt="onlineGD"> -->
+        </div>
+    </section>
+
+    <section id="sec-2">
+        <div>
+            <h2 style="text-align: center;">Features</h2>
+        </div>
+        <div class="container">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2>Front Side</h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Back Side</h2>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2>Front Side</h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Back Side</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <h2>Front Side</h2>
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Back Side</h2>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer>
         <b>onlineGD | &copy; 2021 | All rights reserved</b>
     </footer>
-    
+
 </body>
+
 </html>
